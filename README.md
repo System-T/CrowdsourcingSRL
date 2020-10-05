@@ -2,12 +2,28 @@
 
 This folder contains the data collected for:
 
-  A Novel Workflow for Accurately and Efficiently CrowdsourcingPredicate Senses and Argument Labels
+- A Novel Workflow for Accurately and Efficiently CrowdsourcingPredicate Senses and Argument Labels
   Youxuan Jiang, Huaiyu Zhu, Jonathan K. Kummerfeld, Yunyao Li, Walter Lasecki
   Findings of EMNLP, 2020
 
 This data is primarily of value for analysing the behaviour of our annotators.
 For gold SRL data, see the complete CoNLL 2009 dataset.
+
+If you use the data please cite our work:
+
+```
+@InProceedings{emnlp-findings20srl,
+  title     = {A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels},
+  author    = {Youxuan Jiang and Huaiyu Zhu and Jonathan K. Kummerfeld and Yunyao Li and Walter Lasecki},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
+  month     = {November},
+  year      = {2020},
+  location  = {Online},
+  pages     = {},
+  url       = {},
+  software  = {https://github.com/System-T/CrowdsourcingSRL},
+}
+```
 
 ## predicates-full.txt and arguments-full.txt
 
@@ -35,20 +51,16 @@ The columns are:
 
 ## srl-db.sql
 
-This is the complete database of experimental results.
+This is the complete database of experimental results. It contains the following tables:
 
-+--------------------+
-| Tables_in_crowdsrl |
-+--------------------+
-| argument           |
-| final_task_results |
-| frame              |
-| gold_argument      |
-| gold_verb          |
-| result             |
-| select_result      |
-| sentence           |
-| task               |
-| task_type          |
-| verb               |
-+--------------------+
+- `argument`
+- `final_task_results`
+- `frame`
+- `gold_argument`
+- `gold_verb`
+- `result`
+- `select_result`
+- `sentence`
+- `task`
+- `task_type`
+- `verb`
